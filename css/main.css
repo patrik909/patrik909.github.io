@@ -1,0 +1,315 @@
+/* GENERAL STYLING */
+
+.fadeOut{
+    opacity: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #e4e4e4;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    outline: none;
+}
+
+.weight700{
+    font-weight: 700;
+}
+
+.textUnderline{
+    text-decoration: underline;
+}
+
+.textUppercase{
+    text-transform: uppercase;
+}
+
+/* --- HEADER STYLING --- */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/background.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+h1{
+    color: #e4e4e4;
+    line-height: 100%;
+    font-weight: 900;
+    font-size: 4em;
+    padding-top: 100px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+#upperHeading{
+    font-size: 1.2em;
+}
+
+header button{
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    background-color: #e4e4e4;
+    font-weight: 700;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.9em;
+    transition: 300ms;
+}
+
+header button:hover{
+    background-color: #f3f3f3;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+h2{
+    font-size: 1.7em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+h3{
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* DISPLAY RANDOM */
+
+.displayRandomWrapper{
+    transition: 1000ms;
+}
+
+.randomButtonWrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.interestedWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.tryAgainWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.randomButtonWrapper p{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.randomButtonWrapper button{
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    background: black;
+    font-size: 0.7em;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: 300ms;
+}
+
+.randomButtonWrapper button:hover{
+    background-color: #383737;
+}
+
+/* DISPLAY RELATED */
+
+.displayRelatedWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1000ms;
+}
+
+.readMoreRelated{
+    width: 400px;
+    display: flex;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    border-radius: 3px;
+    padding: 0 20px;
+    color: black;
+    transition: 400ms;
+}
+
+.readMoreRelated:hover{
+    color: white;
+    background: black;
+}
+
+.displayRelatedBack{
+    margin: auto;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 20px;
+    margin-top: 30px;
+    transition: 300ms;
+}
+
+.displayRelatedBack:hover{
+    background-color: #383737;
+}
+
+/* DISPLAY READ MORE */
+
+.readMoreWrapper{
+    max-width: 800px;
+    transition: 1000ms;
+}
+
+.readMoreCategory{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.readMoreCatButton{
+    letter-spacing: 1px;
+    padding: 7px 15px;
+    background: black;
+    font-size: 0.8em;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: 300ms;
+}
+
+.readMoreCatButton:hover{
+    background-color: #383737;        
+}
+
+.ingredientsAndInstructions{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+.cookingIngredients{
+    letter-spacing: 1px;
+    display: flex;
+    
+}
+
+#ingredients{
+    width: 200px;
+}
+
+.cookingInstructions{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    max-width: 350px;
+}
+
+.errorMessage{
+    background-color:rgba(255, 0, 0, 0.5);
+    margin-top: 20px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 100px;
+    transition: 1000ms;
+}
+
+.errorMessage p{
+    margin-bottom: 15px;
+}
+
+
+
+/* TABLET + DESKTOP STYLING */
+
+@media screen and (min-width: 650px) {
+    
+    header{
+        height: 450px;
+    }
+    
+    h1{
+        font-size: 6em;
+    }
+    
+    header button{
+        font-size: 1em;
+    }
+    
+    h2{
+        font-size: 2.4em;
+    }
+    
+    h3{
+        font-size: 1.4em;
+    }
+    
+    .randomButtonWrapper button{
+        padding: 12px 15px;
+        font-size: 0.8em;
+    }
+    
+    .readMoreWrapper{
+        max-width: 800px;
+        transition: 1000ms;
+    }
+    
+    .ingredientsAndInstructions{
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+    }
+
+    .cookingIngredients{
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #ingredients{
+        width: 200px;
+    }
+
+    .cookingInstructions{
+        padding-left: 50px;
+        padding-top: 10px;
+        max-width: 400px;
+    }
+    
+}
